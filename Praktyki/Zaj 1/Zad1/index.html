@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Kalkulator</title>
+</head>
+    <style>
+        body {
+            text-align: center;
+        }
+        select {
+            width: 50px;
+        }
+    </style>
+    <script src="script.js"></script>
+    <body>
+        <h1>Kalkulator</h1>
+        <form id="Kalkulator">
+            <input type="text" id="l1" placeholder="Liczba 1" required ><br>
+
+            <select id="typ" required>
+                <option value="dodawanie">+</option>
+                <option value="odejmowanie">-</option>
+                <option value="mnozenie">*</option>
+                <option value="dzielenie">/</option>
+            </select><br>
+
+            <input type="text" id="l2" placeholder="Liczba 2" required><br>
+
+            <button type="button" onclick="Calc()">Oblicz</button>
+        </form>
+        <p>Wynik: <span id="wynik"></span></p>
+    </body>
+</html>

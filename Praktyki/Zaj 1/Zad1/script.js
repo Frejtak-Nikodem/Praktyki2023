@@ -22,7 +22,7 @@ function Calc() {
 
         case 'dzielenie':
             if (liczba2 === 0) {
-                wynik.textContent =  "Nie podzielisz sobie. :)";
+                wynik.textContent =  "Nie!";
 
             } else {
                 wyn = liczba1 / liczba2;

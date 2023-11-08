@@ -1,5 +1,5 @@
 function Calc() {
-    let liczba1 = parseFloat(document.getElementById('l1').value);
+    let liczba1 = parseFloat(document.getElementById('l1').value); // Pobieranie wartości
     let liczba2 = parseFloat(document.getElementById('l2').value);
 
     let dzialanie = document.getElementById('typ').value;
@@ -7,7 +7,7 @@ function Calc() {
 
     let wyn;
 
-    switch (dzialanie) {
+    switch (dzialanie) { // Switch z  typem działania
         case 'dodawanie':
             wyn = liczba1 + liczba2;
             break;
@@ -33,7 +33,7 @@ function Calc() {
             wynik.textContent =  "Nie.";
     }
 
-    if (!isNaN(wyn)) {
+    if (!isNaN(wyn)) { //Czy jest liczbą
         wynik.textContent = wyn;
     }
     else {

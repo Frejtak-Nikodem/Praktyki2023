@@ -1,5 +1,5 @@
 function Calc() {
-    let liczba1 = parseFloat(document.getElementById('l1').value); // Pobieranie wartości
+    let liczba1 = parseFloat(document.getElementById('l1').value);
     let liczba2 = parseFloat(document.getElementById('l2').value);
 
     let dzialanie = document.getElementById('typ').value;
@@ -7,7 +7,7 @@ function Calc() {
 
     let wyn;
 
-    switch (dzialanie) { // Switch z  typem działania
+    switch (dzialanie) {
         case 'dodawanie':
             wyn = liczba1 + liczba2;
             break;
@@ -22,7 +22,7 @@ function Calc() {
 
         case 'dzielenie':
             if (liczba2 === 0) {
-                wynik.textContent =  "Nie!";
+                wynik.textContent =  "Nie podzielisz sobie. :)";
 
             } else {
                 wyn = liczba1 / liczba2;
@@ -33,7 +33,7 @@ function Calc() {
             wynik.textContent =  "Nie.";
     }
 
-    if (!isNaN(wyn)) { //Czy jest liczbą
+    if (!isNaN(wyn)) {
         wynik.textContent = wyn;
     }
     else {

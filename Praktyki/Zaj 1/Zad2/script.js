@@ -18,5 +18,3 @@ function myReverse(newVarTest){
 	}
 	return result
 }
-
-// Materiały z zajęc się przydają, bez nich mi błąd jakis wywalało :D
